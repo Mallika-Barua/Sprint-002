@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Lora', serif; 
+      line-height: 1.6;
+      margin: 40px;
+      background: #d6f5f5;
+      color: #222;
+    }
+
+    article {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      background-image: url('chinesebg.jpg'); 
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 10px 12px rgba(0,0,0,0.3);
+    }
+
+    article::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: inherit;
+      filter: blur(1.5px) brightness(0.6);
+      z-index: 0;
+    }
+
+    article > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700; 
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      font-weight: 400; 
+    }
+
+    em {
+      font-style: italic; 
+      color: #ffd966;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.096);
+      padding: 4px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 6px;
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h1>The Beauty of Simplicity</h1>
+    <p><em>Simplicity</em> is the key to clarity. When we focus on the essentials, life becomes less complicated and more fulfilling.</p>
+    <p>In design and in life, the principle of <strong>“less is more”</strong> leads to elegance and efficiency.</p>
+
+    <div class="tags">
+      <span>#Design</span>
+      <span>#Minimalism</span>
+      <span>#Life</span>
+    </div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery - CSS Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease, filter 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+      filter: brightness(80%);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Photo Gallery</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="photo1.jpg" alt="Photo 1">
+      <div class="caption">Photo 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo2.jpg" alt="Photo 2">
+      <div class="caption">Photo 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo3.jpg" alt="Photo 3">
+      <div class="caption">Photo 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo4.jpg" alt="Photo 4">
+      <div class="caption">Photo 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo5.jpg" alt="Photo 5">
+      <div class="caption">Photo 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="photo6.jpg" alt="Photo 6">
+      <div class="caption">Photo 6</div>
+    </div>
+  </div>
+
+</body>
+</html>

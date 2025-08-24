@@ -9,6 +9,8 @@ Task 8- https://mallika-barua.github.io/Sprint-002/task8.html
 Task 9- https://mallika-barua.github.io/Sprint-002/task9.html
 Task 10- https://mallika-barua.github.io/Sprint-002/task10.html
 Task 11- https://mallika-barua.github.io/Sprint-002/task11.html
+Task 12- https://mallika-barua.github.io/Sprint-002/task12.html
+
 
 
 
